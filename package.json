@@ -1,12 +1,31 @@
 {
-  "name": "vue-template-reander",
+  "name": "vue-template-render",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "将vue的template语法字符串渲染为dom，返回dom，可获得html\nRender the vue template syntax string as dom, return dom, and get html",
+  "main": "index.ts",
+  "license": "MIT",
+  "author": "qingchiapp",
+  "keywords": [
+    "vue template to dom",
+    "vue template to html",
+    "template to dom",
+    "template to html",
+    "vue template render",
+    "template render"
+  ],
+  "homepage": "https://github.com/qingchiapp/vue-template-render#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingchiapp/vue-template-render.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/qingchiapp/vue-template-render/issues"
+  },
+  "files": [
+    "package.json",
+    "index.ts"
+  ],
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
