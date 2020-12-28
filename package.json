@@ -1,8 +1,8 @@
 {
   "name": "vue-template-render",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "将vue的template语法字符串渲染为dom，返回dom，可获得html\nRender the vue template syntax string as dom, return dom, and get html",
-  "main": "index.ts",
+  "main": "templateRender.js",
   "license": "MIT",
   "author": "qingchiapp",
   "keywords": [
@@ -22,8 +22,9 @@
     "url": "https://github.com/qingchiapp/vue-template-render/issues"
   },
   "files": [
-    "package.json",
-    "index.ts"
+    "templateRender.js",
+    "templateRender.d.ts",
+    "package.json"
   ],
   "dependencies": {
     "vue": "^2.6.12"
