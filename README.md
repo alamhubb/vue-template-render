@@ -14,10 +14,57 @@ npm install vue-template-render
 
 ### 快速上手
 ```javascript
-// hello.md文件内内容为：# hello world
-import TemplateRender from 'vue-template-render'
+//# es6导入
+// import TemplateRender from 'vue-template-render'
+//# cmd导入
+const TemplateRender = require('vue-template-render')
 
+//no options
+const vueTemplate1 = `
+    <div><span v-for="i in 10">{{ i }}</span></div>
+    `
+//# 输出 dom
+console.log(TemplateRender.render(vueTemplate1))
+//# 输出 html
+console.log(TemplateRender.render(vueTemplate1).outerHTML)
 
-//# 输出 # hello world
-console.log(hello)
+//options
+const vueTemplate2 = `
+    <div><span v-for="i in 10">{{msg}} --- {{ i }}</span></div>
+    `
+
+//# 输出 dom
+console.log(TemplateRender.render(vueTemplate2, {data: {msg: 'hello'}}))
+//# 输出 html
+console.log(TemplateRender.render(vueTemplate2, {data: {msg: 'hello'}}).outerHTML)
+
+```
+输出内容
+```
+<div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+</div>
+```
+```
+<div>
+    <span>hello --- 1</span>
+    <span>hello --- 2</span>
+    <span>hello --- 3</span>
+    <span>hello --- 4</span>
+    <span>hello --- 5</span>
+    <span>hello --- 6</span>
+    <span>hello --- 7</span>
+    <span>hello --- 8</span>
+    <span>hello --- 9</span>
+    <span>hello --- 10</span>
+</div>
 ```
