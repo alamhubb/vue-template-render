@@ -11,6 +11,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 exports.__esModule = true;
+exports.TemplateRender = void 0;
 var vue_1 = require("vue");
 var TemplateRender = /** @class */ (function () {
     function TemplateRender() {
@@ -26,4 +27,4 @@ var TemplateRender = /** @class */ (function () {
     };
     return TemplateRender;
 }());
-exports["default"] = TemplateRender;
+exports.TemplateRender = TemplateRender;
