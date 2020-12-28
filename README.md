@@ -68,3 +68,29 @@ console.log(TemplateRender.render(vueTemplate2, {data: {msg: 'hello'}}).outerHTM
     <span>hello --- 10</span>
 </div>
 ```
+
+### 内部实现
+```
+import Vue from 'vue'
+import {ComponentOptions} from "vue/types/options";
+
+export default class TemplateRender {
+    static render<V extends Vue = Vue>(template: string = '', options?: ComponentOptions<V>): Element {
+        const htmlVue = new Vue({
+            el: document.createElement('div'),
+            ...options,
+            template: template
+        })
+        return htmlVue.$el
+    }
+
+    static renderOptions<V extends Vue = Vue>(options: ComponentOptions<V>): Element {
+        const htmlVue = new Vue({
+            el: document.createElement('div'),
+            ...options,
+        })
+        return htmlVue.$el
+    }
+}
+
+```
