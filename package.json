@@ -1,6 +1,6 @@
 {
   "name": "vue-template-render",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "将vue的template语法字符串渲染为dom，返回dom，可获得html\nRender the vue template syntax string as dom, return dom, and get html",
   "main": "templateRender.js",
   "license": "MIT",
