@@ -27,4 +27,4 @@ var TemplateRender = /** @class */ (function () {
     };
     return TemplateRender;
 }());
-exports.TemplateRender = TemplateRender;
+module.exports = TemplateRender;
