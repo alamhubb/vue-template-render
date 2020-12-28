@@ -15,7 +15,8 @@ npm install vue-template-render
 ### 快速上手
 ```javascript
 // hello.md文件内内容为：# hello world
-import hello from './hello.md'
+import TemplateRender from 'vue-template-render'
+
 
 //# 输出 # hello world
 console.log(hello)
